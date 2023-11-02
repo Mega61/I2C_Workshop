@@ -2,11 +2,11 @@ import serial
 import requests
 
 # Configuración de Serial
-SERIAL_PORT = 'COM3'  # Cambia esto según tu puerto serial
+SERIAL_PORT = 'COM3'
 BAUD_RATE = 9600
 
 # Configuración de ThingSpeak
-THINGSPEAK_CHANNEL_API_KEY = 'X06COBGOZ9ZZZUQC'  # Reemplaza con tu API Key de ThingSpeak
+THINGSPEAK_CHANNEL_API_KEY = 'X06COBGOZ9ZZZUQC'
 THINGSPEAK_URL = 'https://api.thingspeak.com/update'
 
 def send_to_thingspeak(temperature):
