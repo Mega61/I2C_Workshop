@@ -1,10 +1,10 @@
 # Workshop de Control de Temperatura y Dashboard en ThingSpeak
 
-Este taller se centra en la implementación de un sistema de control de temperatura de 2 capas que utiliza una configuración maestro-esclavo a través de I2C. El esclavo envía datos de temperatura, capturados por un sensor TMP36 o similar, al maestro cada segundo. El maestro activa un LED en caso de que la temperatura supere los 30°C. Además, se publican los datos de temperatura y las alertas en un panel de control alojado en ThingSpeak, que es capaz de mostrar datos históricos de temperatura.
+Este taller se centra en la implementación de un sistema de control de temperatura de 2 capas que utiliza una configuración maestro-esclavo a través de I2C. El esclavo envía datos de temperatura, capturados por un sensor TMP36, al maestro cada segundo. El maestro activa un LED en caso de que la temperatura supere los 45°C. Además, se publican los datos de temperatura y las alertas en un panel de control alojado en ThingSpeak, que es capaz de mostrar datos históricos de temperatura.
 
 ## Internet_script: Control de Temperatura y Publicación en ThingSpeak
 
-Este código es una aplicación de Python que se ejecuta en una computadora y está diseñada para recibir datos de temperatura a través de un puerto serial desde un dispositivo externo, como un sensor. Luego, envía estos datos a ThingSpeak para su visualización en un panel de control.
+Este código es un script de Python que se ejecuta en el computador en el que se encuentran conectados nuestros Aruino UNO y está diseñada para recibir datos de temperatura a través de un puerto serial desde el sensor de temperatura del Arduino. Luego, envía estos datos a ThingSpeak para su visualización en un panel de control. Se recurrió a esto ya que nuestras boards Arduino UNO no cuentan con la capacidad de enviar información a través de WiFi/Bluetooth.
 
 ### Configuración y Funcionamiento
 
